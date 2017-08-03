@@ -1,0 +1,8 @@
+node_modules/
+.vscode/
+bootstrap/
+bootstrap.min.css
+dist/
+config.json
+.DS_Store
+notes.txt

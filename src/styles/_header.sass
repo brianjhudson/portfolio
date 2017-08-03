@@ -1,0 +1,48 @@
+header
+   height: 100vh
+   background: url('../images/background.jpeg') center center / cover
+
+   .marquee-container
+      position: relative
+      top: 30%
+      transform: translateY(-50%)
+   .marquee
+      text-align: center
+
+      h1, h2
+         font-family: 'Shrikhand', cursive
+         text-shadow: 2px 2px hsla(0, 0, 100%, .5)
+      h1
+         font-size: 4rem
+         font-weight: 700
+         margin-bottom: 0
+      h2 
+         margin-bottom: 2rem
+         font-size: 3rem
+         color: $primaryColor
+
+   .marquee-tagline 
+      margin-bottom: 2rem
+      font-family: 'Open Sans'
+      font-size: 2rem
+      letter-spacing: 0.05rem
+      text-align: center
+      color: #fff
+
+   .marquee-contact
+      margin-top: 1.25rem
+      text-align: center
+         
+@keyframes fade-in
+   0%
+      opacity: 0
+      transform: rotate3d(0, 1, 0, 180deg)
+   1%
+      opacity: 0.5
+      transform: rotate3d(0, 1, 0, 0deg)
+   2%
+      opacity: 1
+   10%
+      opacity: 0
+   100%
+      opacity: 0

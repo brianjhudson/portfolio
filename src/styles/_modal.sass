@@ -1,0 +1,96 @@
+.modal.form-modal .modal-dialog
+   height: 90%
+
+.modal.form-modal .modal-content
+   height: 100%
+   margin: 0 auto
+   padding: 4rem
+   background: #fff
+   font-size: 2rem
+   overflow: scroll
+
+   
+   .error 
+      color: red
+
+   .close-button
+      font-size: 4rem
+      position: absolute
+      right: 20px
+      top: 0
+      cursor: pointer
+
+      &:hover
+         color: $accentColor
+
+   form
+      height: 100%
+
+   .row
+      margin-top: 2rem   
+   input, textarea
+      width: 100%
+
+      &:focus
+         outline: none
+   input
+      height: 4rem
+      border: none
+      border-bottom: 1px solid $themeNeutralColor
+      transition: border 0.5s
+
+      &:focus
+         border-bottom: 2px solid $accentColor
+
+   textarea
+      height: 200px
+      padding: 5px
+      transition: border 0.5s
+
+      &:focus
+         border: 2px solid $accentColor
+
+   input[type="submit"]
+      &:focus
+         border: none
+         background: $accentColor
+      &:active
+         border: 1px solid $accentColor
+         color: $accentColor
+         background: #fff
+   
+   .contact-thanks-container, .contact-sending-container
+      height: 100%
+      width: 60%
+      margin: 0 auto
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+
+      h2
+         margin-bottom: 4rem
+         font-size: 4rem
+         text-align: center
+
+      .mail-icon, .check-icon 
+         font-size: 6em
+
+      p 
+         font-size: 2.5rem
+
+#wine-modal, #bolu-modal, #sql-modal
+   text-align: center
+
+   h1
+      font-family: 'Shrikhand', cursive
+      color: $primaryColor
+   
+   p 
+      width: 70%
+      margin: 2rem auto
+   
+   ul 
+      width: 30%
+      margin: 2rem auto
+      text-align: left

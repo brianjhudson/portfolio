@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Brian Hudson | Web Dev</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald|Crushed|Shrikhand" rel="stylesheet"> 
+      <link href="styles/style.css" rel="stylesheet">
+      <script defer src="scripts/bundle.js"></script>
+   </head>
+   <body>
+      <div class="container-fluid">
+      <header>
+         <div class="row nav-row">
+            <nav class="navbar navbar-default">
+               <div class="container-fluid">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                     </button>
+                     <a class="navbar-brand" href="#">
+                        <div class="brand-container">BH</div>
+                     </a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="mobile-nav">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a data-toggle="modal" data-target="#contact-modal">Contact</a></li>
+                        <li><a id="about-link">About</a></li>
+                        <li><a id="projects-link">Projects</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+         <section class="marquee-container">
+            <div class="row">
+               <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4">
+                  <div class="marquee">
+                     <h1>Brian Hudson</h1>
+                     <h2>Web Developer</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                  <p class="marquee-tagline">
+                     <span>Delivering web solutions that promote connectivity, engagement, and productivity</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="marquee-contact">
+                  <button class="button-contact" data-toggle="modal" data-target="#contact-modal">Contact</button>
+                  <button class="button-learn">Learn More</button>
+               </div>
+            </div>
+         </section>
+         <section class="row enter">
+            <button class="btn btn-primary button-enter"><h2>&darr;</h2></button>
+         </section>
+      </header>
+      <main>
+         <section class="row intro">
+            <div class="col-sm-6 intro-text">
+               <div class="section-content">
+                  <h2 class="section-title">Design. Develop. Deploy.</h2>
+                  <p class="section-description">Whether you need a small site or a large application Brian will design, develop, and implement the technologies to fit your needs and let you take care of business.</p>
+                  <button class="button-contact button-about">Continue</button>
+               </div>
+            </div>
+            <div class="col-xs-hidden col-sm-6 intro-technologies">
+               <ul>
+                  <li>
+                     <div class="image education"></div>
+                  </li>
+                  <li>
+                     <div class="image ecommerce"></div>
+                  </li>
+                  <li>
+                     <div class="image business"></div>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="row about alternate-background">
+            <div class="hidden-xs col-sm-6">
+               <div class="about-image"></div>
+            </div>  
+            <div class="about-info col-sm-6">
+               <div class="section-content">
+                  <h2 class="section-title">Developer &amp; Educator</h2>
+                  <div class="visible-xs about-image"></div>
+                  
+                  <div class="section-description">
+                     <p>After serving as a high school teacher for thirteen years, Brian transitioned to web development to pursue his long-neglected love of programming.</p>
+
+                     <p>A full-stack web developer, Brian has taught and programmed in JavaScript, SQL, and HTML &amp; CSS, and he has experience with Python and C++.</p>
+                  </div>
+                  <div class="button-container">
+                     <button class="button-contact button-features">Continue</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="row features">
+            <div class="section-content">
+
+               <h2 class="section-title">What Do You Need?</h2>
+               <div class="col-sm-4">
+                  <div class="feature-image ecommerce">
+                     <span class="glyphicon glyphicon-shopping-cart"></span>
+                  </div>
+                  <h2 class="feature-title">Ecommerce</h2>
+                  <p class="feature-description">Guide shoppers from splash page to checkout with a robust ecommerce application</p>
+               </div>
+               <div class="col-sm-4">
+                  <div class="feature-image education">
+                     <span class="glyphicon glyphicon-education"></span>
+                  </div>
+                  <h2 class="feature-title">Education</h2>
+                  <p class="feature-description">Inspire and connect learners with online lessons, review games, and practice sessions</p>
+               </div>
+               <div class="col-sm-4">
+                  <div class="feature-image interactive">
+                     <span class="glyphicon glyphicon-comment"></span>
+                  </div>
+                  <h2 class="feature-title">Connections</h2>
+                  <p class="feature-description">Build relationships and engage users with chat applications and interactive applications</p>
+               </div>
+               <div class="button-container">
+                  <button class="button-contact button-projects">Continue</button>
+               </div>
+            </div>
+         </section>
+         <section class="row projects alternate-background">
+            <div class="row">
+                  <h2 class="section-title section-header">Projects</h2>            
+                  <div class="col-sm-4 project-image wine-image">
+                     <div class="project-info">
+                     <a data-toggle="modal" data-target="#wine-modal">
+                        <h2 class="project-title">FeroVino</h2>
+                        <hr>
+                        <p class="project-description">An ecommerce application</p>
+                     </a>
+                     </div>
+                  </div>
+               <div class="col-sm-6 col-sm-offset-1 section-content">
+                  <h2 class="section-title">FeroVino</h2>
+                  <div class="section-description">
+                     <p>An ecommerce application that includes inventory management and sockets for live updates</p>
+                     <ul>
+                        <li>React</li>
+                        <li>MongoDB</li>
+                        <li>Socket.io</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-6 col-sm-offset-1 section-content">
+                  <h2 class="section-title">Bolu</h2>
+                  <div class="section-description">
+                     <p>A language learning app that allows users to learn, contribute, and review new terms</p>
+                     <ul>
+                        <li>AngularJS</li>
+                        <li>MongoDB</li>
+                        <li>Amazon S3</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-4 project-image bolu-image">
+                  <div class="project-info">
+                  <a data-toggle="modal" data-target="#bolu-modal">
+                     <h2 class="project-title">Bolu</h2>
+                     <hr>
+                     <p class="project-description">A language learning application</p>
+                  </a>
+                  </div>
+               </div>
+            </div>
+            <div class="wine row">
+                  <div class="col-sm-4 project-image sql-image">
+                     <div class="project-info">
+                     <a data-toggle="modal" data-target="#sql-modal">
+                        <h2 class="project-title">PG Playground</h2>
+                        <hr>
+                        <p class="project-description">A SQL Learning App</p>
+                     </a>
+                     </div>
+                  </div>
+               <div class="col-sm-6 col-sm-offset-1 section-content">
+                  <h2 class="section-title">PG Playground</h2>
+                  <div class="section-description">
+                     <p>A SQL Learning App that allows users to practice queries, create data, and get help from other users</p>
+                     <ul>
+                        <li>React</li>
+                        <li>PostgreSQL</li>
+                        <li>KnexJS</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="button-container">
+               <button class="button-contact button-skills section-button">Finish</button>
+            </div>
+         </section>
+         <section class="row skills">
+            <div class="section-content">
+               <h2 class="section-title">Skills</h2>
+               <div class="row skills-container">
+                  <div class="col-sm-6 col-md-4"><div class="skill html"></div></div>
+                  <div class="col-sm-6 col-md-4"><div class="skill react"></div></div>
+                  <div class="col-sm-6 col-md-4">
+                     <div class="skill angular"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-4"><div class="skill node"></div></div>
+                  <div class="col-sm-6 col-md-4"><div class="skill postgres"></div></div>
+                  <div class="col-sm-6 col-md-4"><div class="skill mongo"></div></div>
+                  <div class="col-sm-6 col-md-4"><div class="skill redux"></div></div>
+                  <div class="col-sm-6 col-md-4"><div class="skill jasmine"></div></div>
+                  <div class="col-sm-6 col-md-4"><div class="skill mysql"></div></div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer>
+         <nav>
+            <ul>
+               <li><a class="button-header">Brian Hudson, &copy; 2017</a></li>
+               <li><a href="mailto:brianjasonhudson@gmail.com">brianjasonhudson@gmail.com</a></li>
+            </ul>
+         </nav>
+      </footer>
+      </div>
+      <div id="contact-modal" class="modal fade form-modal" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="content">
+            <div class="modal-content">
+               <div class="close-button" data-dismiss="modal">&times;</div>
+               <div class="contact-form-container">
+                  <h1>Let's Talk!</h1>
+                  <div class="error hidden">Sorry! There was an error processing your form.</div> 
+                  <div class="error hidden">Please resubmit or contact Brian at brianjasonhudson@gmail.com.</div>
+                  <form id="contact-form" action="/">
+                     <div class="name row">
+                        <div class="first-name col-sm-6">
+                           <label class="sr-only" for="first-name">First Name</label>
+                           <input required type="text" name="first-name" value="" placeholder="First Name">
+                        </div>
+                        <div class="last-name col-sm-6">
+                           <label class="sr-only" for="last-name">Last Name</label>
+                           <input required type="text" name="last-name" value="" placeholder="Last Name">
+                        </div>
+                     </div>
+                     <div class="organization row">
+                        <div class="col-xs-12">
+                           <label class="sr-only" for="organization">Organization</label>
+                           <input type="text" name="organization" value="" placeholder="Organization">
+                        </div>
+                     </div>
+                     <div class="contact row">
+                        <div class="email col-sm-6">
+                           <label class="sr-only" for="email">Email</label>
+                           <input type="email" name="email" value="" placeholder="Email">
+                        </div>
+                        <div class="phone col-sm-6">
+                           <label class="sr-only" for="phone">Phone</label>
+                           <input type="tel" name="phone" value="" placeholder="Phone">
+                        </div>
+                     </div>
+                     <div class="message row">
+                        <div class="message col-xs-12">
+                           <label class="sr-only" for="message">Message</label>
+                           <textarea name="message" value="" placeholder="Please let me know how I can help you."></textarea>
+                        </div>
+                     </div>
+                     <div class="submit row">
+                        <div class="col-xs-12">
+                           <input class="btn btn-primary" type="submit" value="Send">
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="hidden contact-sending-container">
+                  <div>
+                     <h2>Please wait!</h2>
+                     <div class="mail-icon">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                     </div>
+                     <p>Your message is being sent.</p>
+                  </div>
+               </div>
+               <div class="hidden contact-thanks-container">
+                  <div>
+                     <h2>Thank You!</h2>
+                     <div class="check-icon">
+                        <span class="glyphicon glyphicon-check"></span>
+                     </div>
+                     <p>Thank you so much for your interest. I'll get back to you soon!</p>
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div id="bolu-modal" class="modal fade form-modal" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="content">
+            <div class="modal-content">
+               <div class="close-button" data-dismiss="modal">&times;</div>             
+               <div class="project-container">
+                  <div class="bolu">
+                     <h1>Bolu</h1>
+                     <img src="../images/bolu.jpg" alt="">
+                     <p>A language learning app that allows users to learn, contribute, and review new terms</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="wine-modal" class="modal fade form-modal" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="content">
+            <div class="modal-content">
+               <div class="close-button" data-dismiss="modal">&times;</div>             
+               <div class="project-container">
+                  <div class="wine">
+                     <h1>FeroVino</h1>
+                     <img src="../images/ferovino.jpg" alt="">
+                     <p>An ecommerce application that includes inventory management and sockets for live updates</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="sql-modal" class="modal fade form-modal" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="content">
+            <div class="modal-content">
+               <div class="close-button" data-dismiss="modal">&times;</div>             
+               <div class="project-container">
+                  <div class="sql">
+                     <h1>PG Playground</h1>
+                     <img src="../images/sql.jpg" alt="">
+                     <p>A SQL Learning App that allows users to practice queries, create data, and get help from other users</p>
+                  </div>
+                  <div class="surveys hidden">
+                     <h1>Surveys Migration</h1>
+                     <img src="../images/surveys.jpg" alt="">
+                     <p>A migration from MongoDB to MySQL to provide feedback to instructors and administrators</p>
+                     <ul>
+                        <li>NodeJS</li>
+                        <li>Sequelize</li>
+                        <li>Mongoose</li>
+                     </ul>
+                  </div>
+                  <div class="tracker hidden">
+                     <h1>Student Tracker</h1>
+                     <img src="../images/tracker.jpg" alt="">
+                     <p>A Node server that automates tracking and cloning student repositories</p>
+                     <ul>
+                        <li>NodeJS</li>
+                        <li>Github API</li>
+                        <li>Slack Webhooks</li>
+                     </ul>
+                  </div>
+                  <div class="saree hidden">
+                     <h1>Saree Swap</h1>
+                     <img src="../images/saree.jpg" alt="">
+                     <p>A front-end application that allows users to peruse and exchange clothing</p>
+                     <ul>
+                        <li>AngularJS</li>
+                        <li>Github API</li>
+                        <li>Slack Webhooks</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

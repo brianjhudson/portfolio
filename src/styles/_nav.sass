@@ -1,0 +1,67 @@
+.navbar.navbar-default
+   background: none
+   padding: 0 4rem
+   font-size: 1.5rem
+   transition: background 1s
+   a 
+      cursor: pointer
+   
+   &:hover
+      background: $themeDarkColor
+      a 
+         opacity: 1
+.navbar-right a 
+   opacity: 0
+   transition: opacity 1s
+a.navbar-brand
+   padding: 7.5px
+   &:focus
+      background: transparent
+
+.brand-container
+   background: $primaryColor
+   width: 35px
+   padding: 7.5px
+   border-radius: 50%
+   font-family: 'Crushed'
+   font-weight: 700
+   text-align: center
+
+   &:hover
+      color: $accentColor
+.navbar-default
+   .navbar-nav li
+   
+      @media only screen and (max-width: 767px)
+         &:hover
+            background: #fff
+
+            a 
+               color: $primaryColor
+
+.navbar-right
+   text-transform: uppercase
+   letter-spacing: .1rem
+
+   li a
+      @media only screen and (min-width: 768px)
+         @include lineAnimation(#fff)
+
+      &.active
+         background: #fff
+         color: $accentColor
+
+.nav-row
+   margin: 0
+   width: 100%
+   height: 52px
+   
+.navbar.navbar-default.fixed
+   position: fixed
+   width: 100%
+   background: $themeDarkColor
+   z-index: 10
+
+   .navbar-right a 
+      opacity: 1
+      transition: 1s

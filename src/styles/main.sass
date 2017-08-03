@@ -1,0 +1,191 @@
+$primaryColor: #295266
+$accentColor: #A3311D
+$accentLightColor: #9BE2FF
+$themeNeutralColor: #7F8082
+$themeDarkColor: #2E2F33
+$themeNeutralText: hsl(0, 0%, 30%)
+$textColor: #555
+$primaryBackground: #fff
+$secondaryBackground: #f6f7f7
+ 
+body
+   font-family: 'Open Sans', sans-serif
+   color: $textColor
+
+   .container-fluid
+      padding: 0
+
+h1, h2, h3, h4, h5, h6 
+   font-family: 'Open Sans', sans-serif
+   color: $textColor
+   font-weight: 700
+   margin: 20px 0 10px
+
+h1
+   margin: 44px 0
+
+button.btn:focus, button.btn:active 
+   outline: none
+   border: none
+
+main 
+   padding: 0 45px
+
+.alternate-background
+   background: $secondaryBackground
+   margin: 0 -45px
+   padding: 0 45px
+
+.section-content
+   padding: 115px 0 95px
+   line-height: 1.4
+   font-weight: 400
+   font-size: 17px
+
+   @media only screen and (max-width: 767px)
+      padding: 50px 0
+
+.section-title
+   margin: 0 0 24px
+   font-size: 36px
+   font-weight: 600
+   text-transform: uppercase
+
+.section-description
+   margin: 0 0 40px
+
+.section-button
+   margin: 0 0 16px
+
+.button-contact, .button-learn
+   width: 175px
+   height: 50px
+   font-size: 1rem
+   text-align: center
+   text-transform: uppercase
+   letter-spacing: 0.2rem
+   background: $primaryColor
+   border: none
+   border-radius: 5px
+   color: #fff
+
+   &:hover
+      background: #fff
+      color: $accentColor
+      border: none
+      text-shadow: none
+
+   &:active
+      background: $accentColor
+      color: #fff
+
+.button-contact.button-about, .button-contact.button-features, .button-contact.button-projects, .button-contact.button-skills
+   &:hover
+      background: $accentColor
+      color: #fff
+   &:active
+      background: $themeDarkColor
+      color: #fff
+
+.button-learn
+   margin-left: 2rem
+   border: 2px solid $primaryColor
+   background: transparent
+   text-shadow: 1px 1px $accentColor
+
+.button-contact, .button-learn
+   @media screen and (max-width: 530px)
+      display: block
+      margin: 2rem auto
+
+.enter
+   position: absolute
+   bottom: 10px
+   width: 100% 
+   text-align: center
+
+   button
+      margin-left: 2rem
+      border-radius: 50%
+      position: relative
+      top: 0
+      animation: 5s move-arrow 5s linear infinite 
+
+      h2
+         margin: 0
+         font-family: sans-serif
+         font-size: 2rem
+         color: #fff
+         text-shadow: none
+         animation: 5s color-arrow 5s linear infinite
+
+      &:hover, &:active
+         background: #fff
+         animation: none
+         border: none
+
+         h2
+            animation: none
+            color: $accentColor
+
+@mixin line($color, $bottom: .75em)
+   content: ""
+   position: absolute
+   width: 80%
+   height: 2px
+   left: 10%
+   bottom: $bottom
+   background-color: $color
+
+@mixin lineAnimation($color, $bottom: .75em) 
+   &:hover, &:active 
+      background-color: transparent
+  
+   &:before 
+      @include line($color, $bottom)
+      visibility: hidden
+      -webkit-transform: scaleX(0)
+      transform: scaleX(0)
+      -webkit-transition: all 0.3s ease-in-out 0s
+      transition: all 0.3s ease-in-out 0s
+
+   &:hover:before, &:active:before 
+      visibility: visible
+      -webkit-transform: scaleX(1)
+      transform: scaleX(1)
+
+@keyframes move-arrow
+   0%
+      top: 0
+   3%
+      top: -10px
+   9%
+      top: 10px
+   15%
+      top: -10px
+   21%
+      top: -5px
+   24%
+      top: 0
+
+
+@keyframes color-arrow
+   0%
+      color: #fff
+   21%
+      color: #fff
+   24%
+      color: $accentColor
+   30%
+      color: #fff
+  
+@import './_nav.sass'
+@import './_header.sass'
+@import './_footer.sass'
+@import './_intro.sass'
+@import './_features.sass'
+@import './_about.sass'
+@import './_projects.sass'
+@import './_modal.sass'
+@import './_skills.sass'
+@import './_resume.sass'

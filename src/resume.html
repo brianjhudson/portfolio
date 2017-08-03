@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Brian Hudson | Web Developer</title>
+      <meta charset="UTF-8" lang="en">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="styles/style.css" rel="stylesheet">
+      <script defer src="scripts/bundle.js"></script>
+   </head>
+   <body class="resume">
+      <nav class="navbar navbar-default fixed">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">
+                  <div class="brand-container">BH</div>
+               </a>
+            </div>
+            <div class="collapse navbar-collapse" id="mobile-nav">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a data-toggle="modal" data-target="#contact-modal">Contact</a></li>
+                  <li><a href="index.html">Home</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container">
+         <header>
+            <div>
+               <h1>Brian Hudson</h1>
+               <h2>Web Developer &amp; Educator</h2>
+            </div>
+            <div>
+               <div>
+                  <a href="http://brianjhudson.com">brianjhudson.com</a>
+               </div>
+               <div>
+                  <a href="mailto:brianjasonhudson@gmail.com">brianjasonhudson@gmail.com</a>
+               </div>
+               <div>
+                  <a href="tel:5123639163">512/363-9163</a>
+               </div>
+            </div>
+         </header>
+         <main>
+            <section class="experience">
+               <h3>Experience</h3>
+               <div class="">
+                  <h4></h4>
+               </div>
+            </section>
+            <section class="skills">
+               <h3>Skills</h3>
+               <ul>
+                  <li></li>
+               </ul>
+            </section>
+            <section class="education">
+               <h3>Education</h3>
+               <div class="">
+                  <h4></h4>
+               </div>
+            </section>
+         </main>
+      </div>
+         <footer class="container-fluid">
+            <nav>
+               <ul>
+                  <li><a class="button-header">Brian Hudson, &copy; 2017</a></li>
+                  <li><a href="mailto:brianjasonhudson@gmail.com">brianjasonhudson@gmail.com</a></li>
+               </ul>
+            </nav>       
+         </footer>
+      <div id="contact-modal" class="modal fade form-modal" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="content">
+            <div class="modal-content">
+               <div class="close-button" data-dismiss="modal">&times;</div>
+               <div class="contact-form-container">
+                  <h1>Let's Talk!</h1>
+                  <div class="error hidden">Sorry! There was an error processing your form.</div> 
+                  <div class="error hidden">Please resubmit or contact Brian at brianjasonhudson@gmail.com.</div>
+                  <form id="contact-form" action="/">
+                     <div class="name row">
+                        <div class="first-name col-sm-6">
+                           <label class="sr-only" for="first-name">First Name</label>
+                           <input required type="text" name="first-name" value="" placeholder="First Name">
+                        </div>
+                        <div class="last-name col-sm-6">
+                           <label class="sr-only" for="last-name">Last Name</label>
+                           <input required type="text" name="last-name" value="" placeholder="Last Name">
+                        </div>
+                     </div>
+                     <div class="organization row">
+                        <div class="col-xs-12">
+                           <label class="sr-only" for="organization">Organization</label>
+                           <input type="text" name="organization" value="" placeholder="Organization">
+                        </div>
+                     </div>
+                     <div class="contact row">
+                        <div class="email col-sm-6">
+                           <label class="sr-only" for="email">Email</label>
+                           <input type="email" name="email" value="" placeholder="Email">
+                        </div>
+                        <div class="phone col-sm-6">
+                           <label class="sr-only" for="phone">Phone</label>
+                           <input type="tel" name="phone" value="" placeholder="Phone">
+                        </div>
+                     </div>
+                     <div class="message row">
+                        <div class="message col-xs-12">
+                           <label class="sr-only" for="message">Message</label>
+                           <textarea name="message" value="" placeholder="Please let me know how I can help you."></textarea>
+                        </div>
+                     </div>
+                     <div class="submit row">
+                        <div class="col-xs-12">
+                           <input class="btn btn-primary" type="submit" value="Send">
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="hidden contact-sending-container">
+                  <div>
+                     <h2>Please wait!</h2>
+                     <div class="mail-icon">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                     </div>
+                     <p>Your message is being sent.</p>
+                  </div>
+               </div>
+               <div class="hidden contact-thanks-container">
+                  <div>
+                     <h2>Thank You!</h2>
+                     <div class="check-icon">
+                        <span class="glyphicon glyphicon-check"></span>
+                     </div>
+                     <p>Thank you so much for your interest. I'll get back to you soon!</p>
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </body>
+</html>
