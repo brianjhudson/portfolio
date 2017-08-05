@@ -20,5 +20,14 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
     "pump": "^1.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "nexmo": "^2.0.2",
+    "sendgrid": "^5.2.0"
   }
 }
