@@ -77,3 +77,5 @@ gulp.task('watch', () => {
 })
 
 gulp.task('default', ['watch', 'html', 'sass', 'images', 'fonts', 'js'])
+
+gulp.task('build', ['html', 'sass', 'images', 'fonts', 'js'])
