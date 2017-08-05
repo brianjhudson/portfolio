@@ -83,7 +83,12 @@ $(function(){
          email: email,
          message: message
       }
-      $.post('http://localhost:4000/contact', JSON.stringify(contact), 'application/json')
+      $.ajax({
+         url: 'http://localhost:4001/contact', 
+         method: 'POST',
+         data: JSON.stringify(contact), 
+         contentType: 'application/json'
+      })
       .done(function(data) {
          console.log(data)
          $contactSending.addClass('hidden')
