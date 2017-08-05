@@ -35,19 +35,7 @@ function sendSendGrid(from, to, subject, msg) {
 
 }
 function sendMail(req, res, next) {
-   const {
-      firstName,
-      lastName,
-      organization,
-      phone,
-      email,
-      message
-   } = req.body
-
-   const newMessage = `New Contact: ${firstName} ${lastName}, ${organization}, ${phone}, ${email}, ${message}`
-   req.newMessage = newMessage
-
-   sendSendGrid(email, process.env.MY_EMAIL, 'New Contact', newMessage)
+   sendSendGrid(email, process.env.MY_EMAIL, 'New Contact', req.newMessage)
 
    if (email) {
       const thankYouMessage = `Thank you, ${firstName}, for your message. I will read it as soon as I have a chance and get back to you. I look forward to speaking with you!`
@@ -78,11 +66,27 @@ function sendSMS(req, res, next) {
    next()
 }
 function sendSlack(req, res, next) {
-   axios.post(process.env.SLACK_CHANNEL_URL, {text: req.newMessage})
+   const {
+      firstName,
+      lastName,
+      organization,
+      phone,
+      email,
+      message
+   } = req.body
+
+   const newMessage = `New Contact: ${firstName} ${lastName}, ${organization}, ${phone}, ${email}, ${message}`
+   req.newMessage = newMessage
+
+   axios.post(process.env.SLACK_CHANNEL_URL, {text: newMessage})
    .then(response => {
       console.log("Slack sent")
+      res.status(200).send("Success")
+      next()
    })
-
-   res.status(200).send("Success")
+   .catch(err => {
+      console.log(err)
+      res.status(500).send("Error")
+   })
 }
 
