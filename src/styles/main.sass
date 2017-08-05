@@ -11,7 +11,6 @@ $secondaryBackground: #f6f7f7
 body
    font-family: 'Open Sans', sans-serif
    color: $textColor
-
    .container-fluid
       padding: 0
 
@@ -30,11 +29,16 @@ button.btn:focus, button.btn:active
 
 main 
    padding: 0 45px
+   @media only screen and (max-width: 767px)
+      padding: 0 15px
 
 .alternate-background
    background: $secondaryBackground
    margin: 0 -45px
    padding: 0 45px
+   @media only screen and (max-width: 767px)
+      margin: 0 -15px
+      padding: 0
 
 .section-content
    padding: 115px 0 95px
@@ -50,6 +54,9 @@ main
    font-size: 36px
    font-weight: 600
    text-transform: uppercase
+
+   @media only screen and (max-width: 767px)
+      font-size: 32px
 
 .section-description
    margin: 0 0 40px
